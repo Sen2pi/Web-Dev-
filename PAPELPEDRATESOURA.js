@@ -1,3 +1,4 @@
+// USER CHOICE INFO 
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
      if(userInput === 'rock'){
@@ -10,7 +11,7 @@ const getUserChoice = userInput => {
       console.log('Error: Invalid Input')
     }
   };
-  
+  //COMPUTER CHOICE INFO 
   function getComputerChoice () {
     randomNumber = Math.floor(Math.random() * 3);
       switch(randomNumber){
@@ -26,7 +27,7 @@ const getUserChoice = userInput => {
     } 
     console.log("computer error")
   }
-  
+  //AUTOMATION TO CHECK WINNER
   function determineWinner(userChoice, computerChoice){
     if(userChoice === computerChoice ){
       return'It\'s a Tie';
@@ -44,7 +45,7 @@ const getUserChoice = userInput => {
           return 'Player Wins!! Scissors cut tru paper';
           }
   } 
-  
+  //PLAYING THE GAME 
   const playGame = () => {
     const userChoice = getUserChoice('rock');
     const computerChoice = getComputerChoice();
